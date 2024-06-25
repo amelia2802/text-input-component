@@ -22,15 +22,74 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 9rem;
+  padding-top: 8.5rem;
 }
 
 section{
   display: flex;
   flex-direction: column;
+  margin-bottom: 2.7rem;
 }
-.fa-circle-question{
-  position: absolute
+label{
+  font-weight: bold;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  margin-top: .3rem;
+}
+
+.start-icon {
+  position: absolute;
+  top: .8rem;
+  left: 1rem;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+.end-icon{
+  position: absolute;
+  top: .8rem;
+  right: 1rem;
+  color: #aaa;
+}
+
+.input-wrapper input {
+  width: 25rem;
+  padding: .8rem 0 .8rem 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  text-align: start;
+  background-color: rgba(239, 239, 239, 0.3);
+  border: 1px solid #ccc;
+}
+
+p{
+  color: #777;
+}
+
+.input-wrapper input:focus{
+  outline: 2px solid #6F3CE8;
+  box-shadow: 1px 1px 10px #CCBAF7;
+}
+
+.input-wrapper input:nth-child(2){
+  padding-left: 2.5rem;
+}
+
+.input-wrapper input:disabled{
+  color: #ccc;
+}
+
+.error-input > .end-icon, .error-text{
+  color: red;
+}
+
+.error-input> input:focus{
+  outline: 2px solid red;
+  color: red;
+  box-shadow: 1px 1px 10px rgb(255, 128, 128);
 }
 
 .credits {

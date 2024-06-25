@@ -24,31 +24,39 @@
       <form>
         <section>
           <label for="regular">Email</label>
-          <input id="regular" type="email" placeholder="name@email.com" 
-          <i class="fa-regular fa-circle-question"></i>
+          <div class="input-wrapper">
+            <input id="regular" type="email" placeholder="name@email.com" />
+            <i class="fa-regular fa-circle-question end-icon"></i>
+          </div>
           <p>This is a hint text.</p>
         </section>
 
         <section>
           <label for="icon-mail">Email</label>
-          <i class="fa-regular fa-envelope"></i>
-          <input id="icon-mail" type="email" placeholder="name@email.com" />
-          <i class="fa-regular fa-circle-question"></i>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope start-icon"></i>
+            <input id="icon-mail" type="email" placeholder="name@email.com" />
+            <i class="fa-regular fa-circle-question end-icon"></i>
+          </div>
           <p>This is a hint text.</p>
         </section>
 
         <section>
           <label for="disable">Email</label>
-          <input id="disable" type="email" placeholder="name@email.com" />
-          <i class="fa-regular fa-circle-question"></i>
+          <div class="input-wrapper">
+            <input id="disable" type="email" placeholder="name@email.com"  disabled/>
+            <i class="fa-regular fa-circle-question end-icon"></i>
+          </div>
           <p>This is a hint text.</p>
         </section>
 
         <section>
           <label for="error">Email</label>
-          <input id="error" type="email" placeholder="name@email.com" value="name@email.com"/>
-          <i class="fa-regular fa-circle-question"></i>
-          <p>This is an error message.</p>
+          <div class="input-wrapper error-input">
+            <input id="error" type="email" placeholder="name@email.com" value="name@email.com"/>
+            <i class="fa-regular fa-circle-question end-icon"></i>
+          </div>
+          <p class="error-text">This is an error message.</p>
         </section>
         
       </form>
